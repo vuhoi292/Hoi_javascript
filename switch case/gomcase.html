@@ -1,0 +1,28 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Gom case</title>
+	<link rel="stylesheet" href="">
+</head>
+<body>
+	<!-- <p>Nếu bạn để ý kỹ hơn thì tháy rằng nếu người dùng nhập vào màu đỏ (red), vàng(yellow) và xanh (blue) thì đều có thông báo nhập đúng. Vậy tại sao mình không gom ba trường hợp đó lại thành một</p> -->
+	<!-- Lời kết: Từ ba trường hợp trên ta suy ra đực kết luận như sau:
+	1. Để xử lý cho một trường hợp ngoại lệ nào đó thì ta sử dụng lệnh default. 
+	2.Nếu nhiều nhánh cùng xử lý chung một đoạn code thì ta sẽ bỏ đi lệnh break ở bên trong, như vậy nó sẽ chạy luôn case ở phía dưới mà không cần kiểm tra điều kiện -->
+	<script type="text/javascript">
+		var color = prompt("Nhập dữ liệu màu");
+		switch (color){
+			case 'red':
+			case 'yellow':
+			case 'blue':
+			document.write("Bạn nhập màu " + color);
+			break;
+			default:
+			document.write("Màu bạn nhập không có trong hệ thống");
+		}
+	</script>
+</body>
+</html>

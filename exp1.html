@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title></title>
+	<link rel="stylesheet" href="">
+</head>
+<body>
+	<script type="text/javascript">
+		function kiem_tra_snt(n)
+		{
+			//Biến cờ hiệu
+			var flag = true;
+			//nếu n bé hơn 2 tức là không phải số nguyên tố
+			if (n<2) 
+			{
+				flag = false;
+			}else{
+				//lặp từ 2 tới n-1
+				for (var i = 2;i < n-1; i++)
+				{
+					if (n%i==0) 
+					{
+						flag = false;
+						break;
+					}
+				}
+			}
+			//kiểm tra biến flag
+			if (flag == true) 
+			{
+				document.write(n + " là nguyên tố <br/>");
+			}else{
+				document.write(n + " không phải là số nguyên tố <br/>");
+			}
+		}
+		kiem_tra_snt(11);
+		kiem_tra_snt(12);
+		kiem_tra_snt(13);
+		kiem_tra_snt(14);
+		kiem_tra_snt(15);
+	</script>
+</body>
+</html>

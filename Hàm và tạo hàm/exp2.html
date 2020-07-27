@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Một số ví dụ tạo hàm</title>
+	<link rel="stylesheet" href="">
+</head>
+<body>
+	<!-- Viết chương trình kiểm tra một năm có phải là năm nhuận hay không Năm nhuận là năm chia hết cho 4, Nếu chia hết cho 100 thì nó phải chia hết cho 400. Đây là định nghĩa năm nhuận. -->
+	<script type="text/javascript">
+		//Khai báo hàm 
+		function Kiem_Tra_nam_nhuan(nam)
+		{
+			//nếu năm chia hết cho 100
+			//thì kiểm tra nó có chia hết cho 400 hay không
+			if(nam % 100 == 0)
+				{
+					// nếu chia hết cho 400 thì là năm nhuận
+					if (nam%400==0) {
+						alert(nam+': là năm nhuận');
+					}else{
+						//ngược lại không phải là năm nhuận
+						alert(nam+' không phải là năm nhuận');
+					}
+				}
+				else if(nam%4 == 0){
+					//trường hợp chia hết cho 4
+					alert(nam+ ' phải là năm nhuận');
+				}else{
+					//cuối cùng trường hợp không phải năm nhuận
+					alert(nam + ' không phải là năm nhuận');
+				}
+		}
+		//sử dụng
+		Kiem_Tra_nam_nhuan(20)
+	</script>
+</body>
+</html>

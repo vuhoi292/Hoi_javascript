@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0">
+	<title>Kiểm tra số chẵn và số lẻ </title>
+	<link rel="stylesheet" href="">
+</head>
+<body>
+	<script type="text/javascript">
+		//khai báo biến
+		var num = prompt("Nhập số","0");
+		//chuyển đổi sang kiểu number
+		num = parseInt(num);
+		if (num % 2 == 0) {
+			document.write(num + ' là Số chẵn');
+		}else{
+			document.write(num + ' là số lẻ');
+		}
+	</script>
+</body>
+</html>

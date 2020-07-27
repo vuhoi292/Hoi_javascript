@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>BIến toàn cục và biến cục bộ</title>
+	<link rel="stylesheet" href="">
+</head>
+<body>
+	<!-- Có rất nhiều lưu ý khi sử dụng biến toàn cục và biến cục bộ nên trong phần này chúng ta sẽ tìm hiểu thông qua các ví dụ 
+	Nếu trong hàm có sử dụng từ khóa var và để tạo một biến và tên của biến đó đã tồn tại ở bê ngoài (toàn cục) thì lúc này bên trong hàm sẽ hiểu là đang sử dụng biến cục bộ nên không ảnh hưởng gì biến bên ngoài cả-->
+	<script type="text/javascript">
+		//Biến toàn cục
+		var comment = "Nội dụng comment toàn cục";
+		//Hàm có sử dụng biến toàn cục
+		function add_comment()
+		{
+			comment = "Nội dung comment khi thay đổi";
+			// alert(comment);
+		}
+		// Gọi function comment 
+		add_comment();
+		// In biến toàn cục
+		alert(comment);
+	</script>
+</body>
+</html>

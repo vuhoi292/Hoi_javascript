@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Biến cục bộ</title>
+	<link rel="stylesheet" href="">
+</head>
+<body>
+	<!-- Một biến được gọi là cục bộ khi bạn khai báo nó nằm bên trong một hàm cụ thể nào đó, lúc này biến đó sẽ không sử dụng được ở bên ngoài hàm -->
+	<script type="text/javascript">
+		function add_comment()
+		{
+			var comment = "Nội dung comment"; 
+
+	    // Đoạn code này đúng vì biến comment đã tồn tại
+	    	alert(comment);
+		}
+
+		// Đoạn code này sẽ sai vì không tồn tại biến comment
+			// alert(comment);
+</script>
+</body>
+</html>

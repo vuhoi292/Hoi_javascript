@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Hàm và tạo hàm trong js</title>
+	<link rel="stylesheet" href="">
+</head>
+<body>
+	<!-- Từ bài 1 tới giờ ta đang code từng đoạn riêng lẻ và khi cần thì code lại, như vậy giả sử ta cần xử lý vấn đề đó trong 1000 trường hợp thì ta phải code lại 1000 lần nên rất tốn thời gian, chính vì vậy người ta nghĩ ngay đến hàm, hàm sẽ gom một số đoẹn code vào một khối xử lý và khi cần thì gọi ra dùng -->
+	<!-- Cú phấp của Hàm(function) 
+		function name_of_function(var1, var2,var3,...)
+		{
+			//Some code
+		}
+		Trong đó:
+		function: là từ khóa của javascript nên bắt buộc phải như vậy.
+		name_of_function: là tên của function, thông thường chúng ta tạo những tên có ý nghĩa như find_max, find_min,...
+		var1, var2, var3,... là các tham số truyền vào hàm. Ví dụ viết hàm kiểm tra số chẵn lẻ thì ta sẽ có một tham số đó là số cần kiểm tra.
+	-->
+
+	<script type="text/javascript">
+		//tao h
+		function check_number(number)
+		{
+			if(number % 2 == 0){
+				alert(number + 'là số chẵn');
+			}else{
+				alert(number + 'số lẻ');
+			}
+		}
+		//Sử dụng hàm kiểm tra cho 5 số 
+		check_number(23);
+		
+	</script>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Thực hiện ví dụ trên sử dụng return</title>
+	<link rel="stylesheet" href="">
+</head>
+<body>
+	<!-- Thực hiện lại ví dụ 2 nhưng sử dụng return để trả kết quả về , nếu true thì là năm nhuận, false thì không phải năm nhuận -->
+	<script type="text/javascript">
+		//khai báo hàm
+		function kiem_tra_nam_nhuan(nam){
+			//nếu năm chia hết cho 100
+			//thì kiểm tra nó có chia hết cho 400 hay không
+			if (nam%100 == 0) {
+				//nếu chia hết cho 400 thì là năm nhuận
+				if (nam%400 == 0) {
+					return true;
+				}else{
+					//ngược lại không phải năm nhuận
+					return false;
+				}
+			}
+			else if(nam%4 == 0){
+				//trường hợp chia hết cho 4 là năm nhuận
+				return true;
+			}else{
+				//cuối cùng trường hợp không phải năm nhuận
+				return false;
+			}
+		}
+		//sử dụng
+		var flag = kiem_tra_nam_nhuan(100);
+		if (flag) {
+			alert('là năm nhuận');
+		}else{
+			alert('không phải là năm nhuận');
+		}
+	</script>
+</body>
+</html>

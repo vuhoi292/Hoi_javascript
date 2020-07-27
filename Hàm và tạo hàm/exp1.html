@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Giá trị mặc định của tham số</title>
+	<link rel="stylesheet" href="">
+</head>
+<body>
+	<!-- Có một số trường hợp bạn muốn một tham số nào đó có thể được truyền hoặc không cần truyền vào đều được, lúc này ta phải sử dụng nó như một tham số mặc định. Javascript không có cú pháp gán giá trị mặc định như PHP mà thay vào đó chúng ta sử dụng toán tử || -->
+	<script type="text/javascript">
+		function showMessage(message)
+		{
+			//nếu message không được truyền vào hoặc giá trị nó là rỗng 
+			//thì sẽ được thay thế bằng giá trị 'không có tin nhắn'
+			message = message || 'không có tin nhắn <br/>';
+			document.write(message);
+		}
+		//cách một không truyền tham số
+		showMessage();
+		//cách 2 : truyền tham số 
+		showMessage('Chào mừng bạn đến với javascript');
+	</script>
+</body>
+</html>

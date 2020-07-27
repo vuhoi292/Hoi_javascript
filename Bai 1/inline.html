@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0">
+	<title>Inline js</title>
+	<link rel="stylesheet" href="">
+</head>
+<body>
+	<input type="button" name="" id="clickme" value="Click">
+	<input type="button" name="" id="show" value="show">
+	<script type="text/javascript">
+		//lấy element có id=clickme lưu vào biến button 
+		var button = document.getElementById('clickme');
+		
+		//kho click vào emlement chứa trong button thì thực hiện một function
+		//bên trong chưa function thông báo lên Hello World
+		button.addEventListener('click',function(){
+			alert('hello world');
+		}); 
+		var button = document.getElementById('show');
+			button.addEventListener('click',function(){
+				document.write('learn javascr')
+			});
+	</script>
+</body>
+</html>
